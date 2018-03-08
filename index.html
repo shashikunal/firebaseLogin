@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header ng-include="'views/header.html'"></header>
+  <div class="container">
+    <main ng-view></main>
+  </div>
+  
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDOfcv-Vm1VUffjuaiBKCCYqbWENp3_YwI",
+      authDomain: "loginapp-5225a.firebaseapp.com",
+      databaseURL: "https://loginapp-5225a.firebaseio.com",
+      projectId: "loginapp-5225a",
+      storageBucket: "",
+      messagingSenderId: "937726087248"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/registerctr.js"></script>
+<script src="js/successCtr.js"></script>
+
+
+</body>
+</html>
